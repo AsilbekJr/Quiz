@@ -212,20 +212,6 @@
         </div>
       </div>
     </section>
-
-    <script>
-      const about = document.querySelector(".about");
-      window.addEventListener("scroll", () => {
-        const windowHeight = window.innerHeight;
-        const defaultArea = 350;
-        const aboutTop = about.getBoundingClientRect().top;
-        if (windowHeight > aboutTop + defaultArea) {
-          about.classList.add("active");
-        } else {
-          about.classList.remove("active");
-        }
-      });
-    </script>
     <section id="contact" class="contact">
       <div class="contact-container">
         <div class="contact-info">
@@ -279,5 +265,6 @@
         Copyright <span>&copy</span> 2021 Company Name | Designed by <a href="#">TemplateMo</a> 
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
